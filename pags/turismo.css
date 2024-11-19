@@ -1,0 +1,282 @@
+@import "./global.css";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --laranja: #d7460c;
+    --branco: #fafafa;
+    --vermelho-escuro: #630506;
+    --cinza-escuro: #232323;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100vh;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: var(--laranja);
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    gap: 6rem;
+    height: 6rem;
+     
+}
+
+header ul {
+    display: flex;
+    gap: 6rem;
+    list-style: none;
+    margin-left: auto;  
+}
+
+header li {
+    list-style: none;
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 9rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav a {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    color: var(--branco);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a .espanha {
+    justify-content: flex-start;
+    display: block;
+}
+
+header ul li:not(.botaoCadastro) a {
+    margin-right: 1rem;
+}
+
+.botaoCadastro a {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--branco);
+    color: var(--laranja);
+    border-radius: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+    header div:hover,
+    header li:hover {
+    transform: scale(1);
+    font-weight: 700;
+    transition: .5s;
+}
+
+.botaoCadastro a:hover {
+    background-color: transparent;
+    transition: .5s;
+    color: var(--branco);
+    border: var(--branco) solid 0.3rem;
+}
+
+h1, h2 {
+    font-family: 'Montserrat';
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: 'Lora';
+}
+
+/* Estilo da seção principal */
+.primeira img {
+    width: 50%;
+    margin-right: 6rem;
+}
+
+.primeira {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8rem;
+    margin-inline: 5rem;
+    margin-top: 8rem;
+}
+
+.primeira-textos h1 {
+    color: var(--laranja);
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding-left: 5rem;
+}
+
+.primeira-textos h2 {
+    font-size: 2.4rem;
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.primeira-textos p {
+    color: var(--cinza-escuro);
+    margin-top: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.segunda {
+    display: flex;
+}
+
+.segunda img {
+    width: 55rem;
+}
+
+.segunda h2 {
+    padding: 15px;
+    font-size: 2.4rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.segunda p {
+    text-indent: 20px;
+    padding: 15px;
+    font-size: 1.9rem;
+    color: var(--cinza-escuro);
+}
+
+.maiorca {
+    background-color: #f1c0ac;
+    width: 50%;
+}
+
+.maiorca img {
+    margin-top: 5rem;
+}
+
+.maiorca p {
+    margin-bottom: 5rem;
+}
+
+.maiorca img, h2, p {
+    margin-inline: 5rem;
+}
+
+.santiago {
+    width: 50%;
+}
+
+.santiago img {
+    margin-top: 5rem;
+}
+
+.santiago p {
+    margin-bottom: 5rem;
+}
+
+.santiago img, h2, p {
+    margin-inline: 5rem;
+}
+
+/* Seção \"Gostou do conteúdo?\" */
+.terceira {
+    display: flex;
+}
+
+.terceira img {
+    width: 50%;
+    border-bottom-left-radius: 50rem;
+    border-bottom-right-radius: 50rem;
+    margin-bottom: 2rem;
+}
+
+.terceira h2 {
+    color: var(--vermelho-escuro);
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    margin-left: 10rem;
+}
+
+.cards {
+    flex-direction: row;
+    margin-left: 12%;
+}
+
+.card-1 {
+    background-color: var(--vermelho-escuro);
+    margin-right: 3rem;
+}
+
+.card-2 {
+    background-color: var(--laranja);
+}
+
+.card-1, .card-2 {
+    height: 46rem;
+    width: 25rem;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.card-1 h3, .card-2 h3 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 200;
+}
+
+.card-1 img, .card-2 img {
+    width: 25rem;
+    border-radius: 0rem;
+    
+}
+
+.card-1 p, .card-2 p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.card-1 a, .card-2 a {
+    background-color: #fff;
+    color: #cb5c4c;
+    border: none;
+    padding: 1rem 4rem;
+    border-radius: 25rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: 'Lora';
+    margin-bottom: 2rem; 
+    text-decoration: none;
+}
+
+.card-1 a:hover, .card-2 a:hover {
+    background-color: transparent;
+    transition: .5s;
+    color: var(--branco);
+    border: var(--branco) solid 2px;
+}
